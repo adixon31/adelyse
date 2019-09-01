@@ -1,0 +1,21 @@
+<div class="container">
+    <mat-tab-group>
+        <mat-tab label="Angular">
+            <mat-grid-list cols="4">
+                <mat-grid-tile *ngFor="let tile of angularTiles" [colspan]="tile.cols" [rowspan]="tile.rows"
+                    [style.background]="tile.color">
+                    {{tile.text}}
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="React">
+            <mat-grid-list cols="4">
+                <mat-grid-tile *ngFor="let tile of reactTiles" [colspan]="tile.cols" [rowspan]="tile.rows"
+                    [style.background]="tile.color">
+                    {{tile.text}}
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-tab>
+        <mat-tab label="Other"> Content 3 </mat-tab>
+    </mat-tab-group>
+</div>
